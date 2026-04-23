@@ -1,307 +1,307 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <link rel="icon" type="image/png" href="icon.png">
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="manifest" href="manifest.json">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeseka Price | AI Trainer & ML Evaluator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --dark-bg: #020617;
-            --teal-accent: #2dd4bf;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark-bg);
-            color: #f1f5f9;
-            overflow-x: hidden;
-        }
-        .scrolledex-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 120%;
-            z-index: -2;
-            will-change: transform;
-        }
-        .scrolledex-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.35;
-            filter: saturate(0.7) brightness(0.5);
-        }
-        .font-sleek {
-            font-family: 'Syncopate', sans-serif;
-            letter-spacing: 0.25em;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        .blue-accent {
-            color: var(--teal-accent);
-        }
-        .nav-blur {
-            backdrop-filter: blur(20px);
-            background-color: rgba(2, 6, 23, 0.6);
-        }
-        .form-input {
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            color: white;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        .form-input:focus {
-            border-color: var(--teal-accent);
-        }
-        .credential-title {
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: #64748b;
-            margin-bottom: 8px;
-        }
-        .credential-value {
-            font-family: 'Syncopate', sans-serif;
-            font-size: 14px;
-            color: white;
-            letter-spacing: 0.1em;
-        }
-        .liquid-glass-card {
-            background: rgba(2, 6, 23, 0.4);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(45, 212, 191, 0.2);
-            padding: 2rem;
-            transition: all 0.4s ease;
-            display: block;
-            text-decoration: none;
-        }
-        .liquid-glass-card:hover {
-            background: rgba(45, 212, 191, 0.1);
-            border-color: rgba(45, 212, 191, 0.5);
-            transform: translateY(-5px);
-        }
-        .qr-box {
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        #qr-modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.9);
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: blur(10px);
-        }
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeseka Price - AI Trainer | Video Production | ML Evaluator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--dark-bg: #020617;
+--teal-accent: #2dd4bf;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: var(--dark-bg);
+color: #f1f5f9;
+overflow-x: hidden;
+}
+.scrolledex-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 120%;
+z-index: -2;
+will-change: transform;
+}
+.scrolledex-video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.35;
+filter: saturate(0.7) brightness(0.5);
+}
+.font-sleek {
+font-family: 'Syncopate', sans-serif;
+letter-spacing: 0.25em;
+font-weight: 400;
+text-transform: uppercase;
+}
+.blue-accent {
+color: var(--teal-accent);
+}
+.nav-blur {
+backdrop-filter: blur(20px);
+background-color: rgba(2, 6, 23, 0.6);
+}
+.form-input {
+width: 100%;
+background-color: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+padding: 1rem;
+color: white;
+outline: none;
+transition: border-color 0.3s;
+}
+.form-input:focus {
+border-color: var(--teal-accent);
+}
+.credential-title {
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: #64748b;
+margin-bottom: 8px;
+}
+.credential-value {
+font-family: 'Syncopate', sans-serif;
+font-size: 14px;
+color: white;
+letter-spacing: 0.1em;
+}
+.liquid-glass-card {
+background: rgba(2, 6, 23, 0.4);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(45, 212, 191, 0.2);
+padding: 2rem;
+transition: all 0.4s ease;
+display: block;
+text-decoration: none;
+}
+.liquid-glass-card:hover {
+background: rgba(45, 212, 191, 0.1);
+border-color: rgba(45, 212, 191, 0.5);
+transform: translateY(-5px);
+}
+.qr-box {
+background: white;
+padding: 10px;
+border-radius: 8px;
+}
+#qr-modal {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.9);
+z-index: 100;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(10px);
+}
 
-        /* Teal Glassmorphism Scrollodex */
-        .tech-footer {
-            background: rgba(2, 6, 23, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-top: 1px solid rgba(45, 212, 191, 0.3);
-            padding: 20px 0;
-            overflow-x: auto;
-            white-space: nowrap;
-            scrollbar-width: thin;
-            scrollbar-color: #2dd4bf #020617;
-            position: relative;
-            width: 100%;
-        }
-        .tech-footer::-webkit-scrollbar {
-            height: 4px;
-        }
-        .tech-footer::-webkit-scrollbar-track {
-            background: #020617;
-        }
-        .tech-footer::-webkit-scrollbar-thumb {
-            background-color: #2dd4bf;
-            border-radius: 10px;
-        }
-        .footer-grid {
-            display: inline-flex;
-            gap: 40px;
-            padding: 0 40px;
-            align-items: center;
-        }
-        .footer-grid a {
-            color: #2dd4bf;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 13px;
-            transition: all 0.3s ease;
-        }
-        .footer-grid a:hover {
-            color: #fff;
-            text-shadow: 0 0 12px rgba(45, 212, 191, 0.8);
-        }
-    </style>
+/* Teal Glassmorphism Scrollodex */
+.tech-footer {
+background: rgba(2, 6, 23, 0.6);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border-top: 1px solid rgba(45, 212, 191, 0.3);
+padding: 20px 0;
+overflow-x: auto;
+white-space: nowrap;
+scrollbar-width: thin;
+scrollbar-color: #2dd4bf #020617;
+position: relative;
+width: 100%;
+}
+.tech-footer::-webkit-scrollbar {
+height: 4px;
+}
+.tech-footer::-webkit-scrollbar-track {
+background: #020617;
+}
+.tech-footer::-webkit-scrollbar-thumb {
+background-color: #2dd4bf;
+border-radius: 10px;
+}
+.footer-grid {
+display: inline-flex;
+gap: 40px;
+padding: 0 40px;
+align-items: center;
+}
+.footer-grid a {
+color: #2dd4bf;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+font-size: 13px;
+transition: all 0.3s ease;
+}
+.footer-grid a:hover {
+color: #fff;
+text-shadow: 0 0 12px rgba(45, 212, 191, 0.8);
+}
+</style>
 </head>
 <body>
-    <div id="qr-modal" onclick="toggleQR()">
-        <div class="space-y-6 flex flex-col items-center text-center">
-            <div class="qr-box">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://price4hire.com" alt="Price 4 Hire QR">
-            </div>
-            <p class="font-sleek text-[10px] blue-accent tracking-widest">Scan to Connect</p>
-            <p class="text-[8px] text-slate-500 uppercase tracking-widest">Tap anywhere to close</p>
-        </div>
-    </div>
+<div id="qr-modal" onclick="toggleQR()">
+<div class="space-y-6 flex flex-col items-center text-center">
+<div class="qr-box">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://price4hire.com" alt="Price 4 Hire QR">
+</div>
+<p class="font-sleek text-[10px] blue-accent tracking-widest">Scan to Connect</p>
+<p class="text-[8px] text-slate-500 uppercase tracking-widest">Tap anywhere to close</p>
+</div>
+</div>
 
-    <div class="scrolledex-container" id="bg-parallax">
-        <video autoplay loop muted playsinline class="scrolledex-video">
-            <source src="hero-bg.mp4" type="video/mp4">
-        </video>
-    </div>
+<div class="scrolledex-container" id="bg-parallax">
+<video autoplay loop muted playsinline class="scrolledex-video">
+<source src="hero-bg.mp4" type="video/mp4">
+</video>
+</div>
 
-    <nav class="fixed w-full z-50 nav-blur border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-            <a href="https://credits.muso.ai/profile/7442aa51-0d8c-48bd-a481-c384c164753a" target="_blank" class="font-sleek text-xs blue-accent tracking-[0.4em]">Price Royalty</a>
-            <div class="hidden md:flex space-x-12 text-[9px] tracking-[0.5em] uppercase font-bold text-slate-500 items-center">
-                <a href="#about" class="hover:text-white transition-all">Identity</a>
-                <a href="#showcase" class="hover:text-white transition-all">Works</a>
-                <a href="#credits" class="hover:text-white transition-all">Credits</a>
-                <a href="#contact-section" class="hover:text-teal-400 transition-all">Contact</a>
-                <button onclick="toggleQR()" class="px-3 py-1 border border-teal-500/30 rounded text-teal-400 hover:bg-teal-400 hover:text-black transition-all">QR</button>
-            </div>
-        </div>
-    </nav>
+<nav class="fixed w-full z-50 nav-blur border-b border-white/5">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<a href="https://credits.muso.ai/profile/7442aa51-0d8c-48bd-a481-c384c164753a" target="_blank" class="font-sleek text-xs blue-accent tracking-[0.4em]">Price Royalty</a>
+<div class="hidden md:flex space-x-12 text-[9px] tracking-[0.5em] uppercase font-bold text-slate-500 items-center">
+<a href="#about" class="hover:text-white transition-all">Identity</a>
+<a href="#showcase" class="hover:text-white transition-all">Works</a>
+<a href="#credits" class="hover:text-white transition-all">Credits</a>
+<a href="#contact-section" class="hover:text-teal-400 transition-all">Contact</a>
+<button onclick="toggleQR()" class="px-3 py-1 border border-teal-500/30 rounded text-teal-400 hover:bg-teal-400 hover:text-black transition-all">QR</button>
+</div>
+</div>
+</nav>
 
-    <section class="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <div class="z-10" data-aos="fade-up">
-            <p class="text-[9px] tracking-[0.6em] uppercase text-teal-500/50 mb-6 font-bold">AI Trainer | Video Production | Machine Learning Evaluator</p>
-           
-            <h1 class="font-sleek text-3xl md:text-5xl mb-6 leading-tight">Jeseka <span class="blue-accent opacity-90">Price</span></h1>
-            <div class="w-16 h-[1px] bg-teal-500/20 mx-auto mb-10"></div>
-            <p class="text-xs md:text-sm text-slate-400 mb-12 max-w-xl mx-auto font-light leading-relaxed tracking-widest uppercase opacity-80">
-                Refining Multimodal Physics for the Next Era of Generative Intelligence.
-            </p>
-            <div class="flex flex-col md:flex-row gap-10 justify-center items-center">
-                <a href="#showcase" class="text-[9px] tracking-[0.4em] uppercase border-b border-teal-500/30 pb-2 hover:border-teal-500 transition-all">Showcase</a>
-                <a href="#contact-section" class="px-10 py-3 bg-white text-black text-[9px] tracking-[0.4em] uppercase font-bold hover:bg-teal-400 transition-all shadow-xl shadow-teal-500/10">Price 4 Hire</a>
-            </div>
-        </div>
-    </section>
+<section class="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
+<div class="z-10" data-aos="fade-up">
+<p class="text-[9px] tracking-[0.6em] uppercase text-teal-500/50 mb-6 font-bold">AI Trainer | Master Video Production | Machine Learning Test Engineer</p>
 
-    <section id="showcase" class="py-32 bg-black/40 backdrop-blur-md border-t border-white/5">
-        <div class="max-w-5xl mx-auto px-8">
-            <div class="grid md:grid-cols-2 gap-20 items-center">
-                <div data-aos="fade-right">
-                    <div class="aspect-[9/16] rounded-sm overflow-hidden border border-white/10 shadow-2xl">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/OzcGfNYBHEU?autoplay=0&mute=1&loop=1&playlist=OzcGfNYBHEU" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="space-y-8" data-aos="fade-left">
-                    <h2 class="font-sleek text-xl blue-accent">"808" Synthesis</h2>
-                    <p class="text-sm text-slate-400 font-light leading-loose tracking-wide uppercase tracking-[0.1em]">Evaluation of audio-visual alignment and generative physics.</p>
-                    <div class="pt-4 border-t border-white/5">
-                        <div class="credential-title" style="margin-bottom: 2px;">Role</div>
-                        <p class="text-xs uppercase tracking-widest text-white">Composer // AI Orchestrator</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<h1 class="font-sleek text-3xl md:text-5xl mb-6 leading-tight">Jeseka <span class="blue-accent opacity-90">Price</span></h1>
+<div class="w-16 h-[1px] bg-teal-500/20 mx-auto mb-10"></div>
+<p class="text-xs md:text-sm text-slate-400 mb-12 max-w-xl mx-auto font-light leading-relaxed tracking-widest uppercase opacity-80">
+Refining Multimodal Physics for the Next Era of Generative Intelligence.
+</p>
+<div class="flex flex-col md:flex-row gap-10 justify-center items-center">
+<a href="#showcase" class="text-[9px] tracking-[0.4em] uppercase border-b border-teal-500/30 pb-2 hover:border-teal-500 transition-all">Showcase</a>
+<a href="#contact-section" class="px-10 py-3 bg-white text-black text-[9px] tracking-[0.4em] uppercase font-bold hover:bg-teal-400 transition-all shadow-xl shadow-teal-500/10">Price 4 Hire</a>
+</div>
+</div>
+</section>
 
-    <section id="credits" class="py-24 bg-black/50 backdrop-blur-md border-t border-white/5">
-        <div class="max-w-5xl mx-auto px-8" data-aos="fade-up">
-            <h2 class="font-sleek text-xl blue-accent mb-16 text-center tracking-widest">Professional Credits</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <a href="https://invisibletech.ai/" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">AI Training</div>
-                    <div class="credential-value">Invisible Tech</div>
-                </a>
-                <a href="https://m.imdb.com/title/tt22169626/fullcredits/?ref_=ext_shr_lnk" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">Composition</div>
-                    <div class="credential-value">HBO MAX (IMDb)</div>
-                </a>
-                <a href="https://app.outlier.ai/dashboard" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">Annotation</div>
-                    <div class="credential-value">Scale AI</div>
-                </a>
-                <a href="https://www.voices.com/profile/jesekaprice" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">Voiceover</div>
-                    <div class="credential-value">Voices.com</div>
-                </a>
-                <a href="https://credits.muso.ai/profile/7442aa51-0d8c-48bd-a481-c384c164753a" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">Publishing</div>
-                    <div class="credential-value">Price Royalty</div>
-                </a>
-                <a href="https://github.com/JPriceisRight/Price4HirePortfolio-/blob/main/README.md" target="_blank" class="liquid-glass-card">
-                    <div class="credential-title">Technical</div>
-                    <div class="credential-value">Director's Note</div>
-                </a>
-            </div>
-        </div>
-    </section>
+<section id="showcase" class="py-32 bg-black/40 backdrop-blur-md border-t border-white/5">
+<div class="max-w-5xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div data-aos="fade-right">
+<div class="aspect-[9/16] rounded-sm overflow-hidden border border-white/10 shadow-2xl">
+<iframe class="w-full h-full" src="https://www.youtube.com/embed/OzcGfNYBHEU?autoplay=0&mute=1&loop=1&playlist=OzcGfNYBHEU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="space-y-8" data-aos="fade-left">
+<h2 class="font-sleek text-xl blue-accent">"808" Synthesis</h2>
+<p class="text-sm text-slate-400 font-light leading-loose tracking-wide uppercase tracking-[0.1em]">Evaluation of audio-visual alignment and generative physics.</p>
+<div class="pt-4 border-t border-white/5">
+<div class="credential-title" style="margin-bottom: 2px;">Role</div>
+<p class="text-xs uppercase tracking-widest text-white">Composer // AI Orchestrator</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="contact-section" class="py-32 bg-black/60 backdrop-blur-xl border-t border-white/5">
-        <div class="max-w-xl mx-auto px-8 text-center" data-aos="fade-up">
-            <div class="credential-title mb-4">Inquiry</div>
-            <h2 class="font-sleek text-xl blue-accent mb-12 tracking-widest">Connect with Jeseka</h2>
-            <form name="contact" method="POST" data-netlify="true" action="/success.html" class="space-y-6 text-left">
-                <input type="hidden" name="form-name" value="contact">
-                <input type="text" name="name" placeholder="Full Name" required class="form-input">
-                <input type="email" name="email" placeholder="Email Address" required class="form-input">
-                <textarea name="message" rows="5" placeholder="Project Details" required class="form-input"></textarea>
-                <button type="submit" class="w-full bg-white text-black py-4 font-bold text-[9px] tracking-[0.4em] uppercase hover:bg-teal-400 transition-all">
-                    Submit Transmission
-                </button>
-            </form>
-        </div>
-    </section>
+<section id="credits" class="py-24 bg-black/50 backdrop-blur-md border-t border-white/5">
+<div class="max-w-5xl mx-auto px-8" data-aos="fade-up">
+<h2 class="font-sleek text-xl blue-accent mb-16 text-center tracking-widest">Professional Credits</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<a href="https://invisibletech.ai/" target="_blank" class="liquid-glass-card">
+<div class="credential-title">AI Training</div>
+<div class="credential-value">Invisible Tech</div>
+</a>
+<a href="https://m.imdb.com/title/tt22169626/fullcredits/?ref_=ext_shr_lnk" target="_blank" class="liquid-glass-card">
+<div class="credential-title">Composition</div>
+<div class="credential-value">HBO MAX (IMDb)</div>
+</a>
+<a href="https://app.outlier.ai/dashboard" target="_blank" class="liquid-glass-card">
+<div class="credential-title">Annotation</div>
+<div class="credential-value">Scale AI</div>
+</a>
+<a href="https://www.voices.com/profile/jesekaprice" target="_blank" class="liquid-glass-card">
+<div class="credential-title">Voiceover</div>
+<div class="credential-value">Voices.com</div>
+</a>
+<a href="https://credits.muso.ai/profile/7442aa51-0d8c-48bd-a481-c384c164753a" target="_blank" class="liquid-glass-card">
+<div class="credential-title">Publishing</div>
+<div class="credential-value">Price Royalty</div>
+</a>
+<a href="https://github.com/JPriceisRight/Price4HirePortfolio-/blob/main/README.md" target="_blank" class="liquid-glass-card">
+<div class="credential-title">Technical</div>
+<div class="credential-value">Director's Note</div>
+</a>
+</div>
+</div>
+</section>
 
-    <div class="tech-footer">
-        <div class="footer-grid">
-            <a href="https://www.invisible.co/" target="_blank">AI Training (Invisible Tech)</a>
-            <a href="https://www.imdb.com/" target="_blank">Composition (HBO Max)</a>
-            <a href="https://scale.com/" target="_blank">Annotation (Scale AI)</a>
-            <a href="https://www.voices.com/" target="_blank">Voiceover (Voices.com)</a>
-            <a href="https://muso.ai/" target="_blank">Publishing (Price Royalty Publishing)</a>
-        </div>
-    </div>
+<section id="contact-section" class="py-32 bg-black/60 backdrop-blur-xl border-t border-white/5">
+<div class="max-w-xl mx-auto px-8 text-center" data-aos="fade-up">
+<div class="credential-title mb-4">Inquiry</div>
+<h2 class="font-sleek text-xl blue-accent mb-12 tracking-widest">Connect with Jeseka</h2>
+<form name="contact" method="POST" data-netlify="true" action="/success.html" class="space-y-6 text-left">
+<input type="hidden" name="form-name" value="contact">
+<input type="text" name="name" placeholder="Full Name" required class="form-input">
+<input type="email" name="email" placeholder="Email Address" required class="form-input">
+<textarea name="message" rows="5" placeholder="Project Details" required class="form-input"></textarea>
+<button type="submit" class="w-full bg-white text-black py-4 font-bold text-[9px] tracking-[0.4em] uppercase hover:bg-teal-400 transition-all">
+Submit Transmission
+</button>
+</form>
+</div>
+</section>
 
-    <footer class="py-12 px-8 border-t border-white/5 bg-black/20">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center opacity-30">
-                <p class="text-[8px] tracking-[0.5em] uppercase font-bold">© 2026 Jeseka Miya Price</p>
-                <div class="flex gap-8 mt-4 md:mt-0">
-                    <a href="mailto:Price4Hire@gmail.com" class="text-[8px] tracking-[0.5em] uppercase hover:text-teal-400 transition-colors">Direct Email</a>
-                    <a href="https://github.com/JPriceisRight/Price4HirePortfolio-" target="_blank" class="text-[8px] tracking-[0.5em] uppercase hover:text-teal-400 transition-colors">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<div class="tech-footer">
+<div class="footer-grid">
+<a href="https://www.invisible.co/" target="_blank">AI Training (Invisible Tech)</a>
+<a href="https://www.imdb.com/" target="_blank">Composition (HBO Max)</a>
+<a href="https://scale.com/" target="_blank">Annotation (Scale AI)</a>
+<a href="https://www.voices.com/" target="_blank">Voiceover (Voices.com)</a>
+<a href="https://muso.ai/" target="_blank">Publishing (Price Royalty Publishing)</a>
+</div>
+</div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1500,
-            once: false
-        });
+<footer class="py-12 px-8 border-t border-white/5 bg-black/20">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center opacity-30">
+<p class="text-[8px] tracking-[0.5em] uppercase font-bold">© 2026 Jeseka Miya Price</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a href="mailto:Price4Hire@gmail.com" class="text-[8px] tracking-[0.5em] uppercase hover:text-teal-400 transition-colors">Direct Email</a>
+<a href="https://github.com/JPriceisRight/Price4HirePortfolio-" target="_blank" class="text-[8px] tracking-[0.5em] uppercase hover:text-teal-400 transition-colors">GitHub</a>
+</div>
+</div>
+</div>
+</footer>
 
-        window.addEventListener('scroll', function() {
-            const scroll = window.pageYOffset;
-            const bg = document.getElementById('bg-parallax');
-            bg.style.transform = `translateY(${scroll * 0.3}px)`;
-        });
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+duration: 1500,
+once: false
+});
 
-        function toggleQR() {
-            const modal = document.getElementById('qr-modal');
-            modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
-        }
-    </script>
+window.addEventListener('scroll', function() {
+const scroll = window.pageYOffset;
+const bg = document.getElementById('bg-parallax');
+bg.style.transform = `translateY(${scroll * 0.3}px)`;
+});
+
+function toggleQR() {
+const modal = document.getElementById('qr-modal');
+modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
+}
+</script>
 </body>
 </html>
