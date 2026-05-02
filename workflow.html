@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Workflow | Jeseka Price</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --dark-bg: #020617; --teal-accent: #2dd4bf; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: #f1f5f9; }
+        .font-sleek { font-family: 'Syncopate', sans-serif; letter-spacing: 0.25em; font-weight: 400; text-transform: uppercase; }
+        .liquid-glass-card { 
+            background: rgba(2, 6, 23, 0.4); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(45, 212, 191, 0.3); 
+            padding: 2rem; 
+        }
+        .blue-glow { text-shadow: 0 0 15px rgba(45, 212, 191, 0.5); }
+    </style>
+</head>
+<body class="py-20 px-6">
 
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-sleek text-xs text-[#2dd4bf] tracking-[0.4em]">← Return to Identity</a>
+            <div class="font-sleek text-[10px] text-slate-500 tracking-[0.4em]">Technical Pipeline Documentation</div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto mt-10">
+        <header class="mb-16 text-center md:text-left">
+            <p class="text-[9px] tracking-[0.6em] uppercase text-teal-500 mb-4 font-bold">Scientific Visualization</p>
+            <h1 class="font-sleek text-3xl md:text-5xl text-white mb-6">DATA <span class="text-[#2dd4bf] blue-glow">PIPELINE</span></h1>
+            <p class="text-slate-400 max-w-2xl leading-relaxed uppercase tracking-[0.2em] text-[10px]">
+                Bridging clinical MRI data to high-fidelity 3D assets for AI Research & Surgical Simulation.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 gap-12">
+            
+            <div class="liquid-glass-card rounded-2xl group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">01</span>
+                        <h2 class="font-sleek text-lg text-white mb-4">Volumetric Segmentation</h2>
+                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: 3D Slicer</p>
+                    </div>
+                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
+                        <p class="mb-4">Beginning with raw DICOM MRI datasets, I perform precise segmentation of intracranial pathology. This involves using thresholding and manual tracing tools to define the boundaries of the tumor (ICD-10: C71.9).</p>
+                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
+                            <li>Multi-Volume Data Loading & Alignment</li>
+                            <li>Segment Editor Labeling for Malignant Neoplasms</li>
+                            <li>Smoothing & Topological Refinement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="liquid-glass-card rounded-2xl group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">02</span>
+                        <h2 class="font-sleek text-lg text-white mb-4">Advanced Data Processing</h2>
+                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: ParaView</p>
+                    </div>
+                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
+                        <p class="mb-4">The segmented mesh is imported into ParaView for scientific rendering. I apply custom scalar opacity mapping and volume rendering techniques to visualize density variations within the tumor tissue.</p>
+                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
+                            <li>Iso-surface Extraction & Clipping</li>
+                            <li>Voxel-to-Mesh Optimization for AI Training</li>
+                            <li>Custom Color Mapping based on Hounsfield Units (HU)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="liquid-glass-card rounded-2xl group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">03</span>
+                        <h2 class="font-sleek text-lg text-white mb-4">Diagnostic Synthesis</h2>
+                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: Audacity | 4K Render Engine</p>
+                    </div>
+                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
+                        <p class="mb-4">The final 3D asset is integrated with a professional technical voiceover. This step bridges the visualization with clinical documentation (CPT 70553), creating a comprehensive multimodal training asset.</p>
+                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
+                            <li>Technical Narration for Medical Informatics</li>
+                            <li>Cinematic 4K Rotational Export</li>
+                            <li>Alignment with AI Data Annotation Standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-20 text-center pb-20">
+            <a href="index.html#contact-section" class="px-12 py-4 bg-[#2dd4bf] text-black font-sleek text-[10px] hover:bg-white transition-all">
+                Inquire for Technical Consulting
+            </a>
+        </footer>
+    </main>
+
+</body>
+</html>
