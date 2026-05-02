@@ -184,26 +184,28 @@ box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.4);
 </video>
 </div>
 
-<nav class="fixed w-full z-50 nav-blur border-b border-white/5">
-<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-<a href="https://credits.muso.ai/profile/7442aa51-0d8c-48bd-a481-c384c164753a" target="_blank" class="font-sleek text-xs blue-accent tracking-[0.4em]">Price Royalty</a>
-<div class="hidden md:flex space-x-12 text-[9px] tracking-[0.5em] uppercase font-bold text-slate-500 items-center">
-<a href="#about" class="hover:text-white transition-all">Identity</a>
-<a href="#showcase" class="hover:text-white transition-all">Works</a>
-<a href="#credits" class="hover:text-white transition-all">Credits</a>
-<a href="#contact-section" class="hover:text-teal-400 transition-all">Contact</a>
-<button onclick="toggleQR()" class="px-3 py-1 border border-teal-500/30 rounded text-teal-400 hover:bg-teal-400 hover:text-black transition-all">QR</button>
-</div>
-</div>
-</nav>
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+        <a href="#about" class="font-sleek text-[10px] text-[#2dd4bf] tracking-[0.4em] hover:text-white transition-all">PRICE ROYALTY</a>
 
+        <div class="hidden md:flex gap-8">
+            <a href="#about" class="font-sleek text-[9px] text-white tracking-[0.3em] hover:text-[#2dd4bf] transition-all">Identity</a>
+            <a href="#credits" class="font-sleek text-[9px] text-white tracking-[0.3em] hover:text-[#2dd4bf] transition-all">Credentials</a>
+            <a href="workflow.html" class="font-sleek text-[9px] text-white tracking-[0.3em] hover:text-[#2dd4bf] transition-all">Workflow</a>
+            <a href="#contact-section" class="font-sleek text-[9px] text-white tracking-[0.3em] hover:text-[#2dd4bf] transition-all">Contact</a>
+        </div>
+    </div>
+</nav>
 <section id="about" class="relative min-h-screen flex flex-col items-center justify-center px-6">
     <div class="z-10 liquid-glass-card flex flex-col md:flex-row gap-12 items-center" style="max-width: 1200px; width: 100%; margin-top: 80px;">
         
         <div class="md:w-3/5 flex flex-col items-center md:items-start text-center md:text-left">
-            <p class="text-[8px] tracking-[0.5em] uppercase text-teal-400 mb-8 font-bold leading-relaxed border-l-2 border-teal-500/50 pl-4">
-                ML/AI Trainer • Google Gemini Flexwork • Technical Director
-            </p>
+            
+            <div class="bg-[#2dd4bf] px-5 py-3 mb-8 rounded-sm shadow-[0_0_15px_rgba(45,212,191,0.4)]">
+                <p class="text-[8px] md:text-[9px] tracking-[0.4em] uppercase text-slate-900 font-bold leading-none">
+                    ML/AI Trainer • GOOGLE GEMINI FLEXWORK • Technical Director
+                </p>
+            </div>
 
             <h1 class="font-sleek text-4xl sm:text-5xl md:text-5xl lg:text-6xl mb-8 leading-tight text-white tracking-[0.15em]">
                 JESEKA <span class="blue-accent opacity-90">PRICE</span>
@@ -213,25 +215,32 @@ box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.4);
                 Architecting the intersection of Medical Informatics and Generative Intelligence through Scientific 3D Visualization and Cinematic Sound Design.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 mb-12 w-full justify-center md:justify-start">
-    <a href="#video-portfolio" class="px-10 py-4 border border-teal-500/40 text-white text-[9px] tracking-[0.5em] uppercase font-bold hover:bg-teal-500/10 transition-all text-center">
-        Video Reels
-    </a>
-    <a href="workflow.html" class="px-10 py-4 bg-white text-black text-[9px] tracking-[0.5em] uppercase font-bold hover:bg-[#2dd4bf] transition-all shadow-2xl shadow-teal-500/20 text-center">
-        Technical Workflow
-    </a>
-</div>
-
-            <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                <a href="https://www.linkedin.com/in/jesekaprice" target="_blank" class="text-[8px] tracking-[0.3em] text-slate-500 border border-slate-800/50 px-5 py-2 rounded-sm uppercase hover:text-white hover:border-teal-500 transition-all">LinkedIn</a>
-                <a href="https://g.dev/jprice4hire" target="_blank" class="text-[8px] tracking-[0.3em] text-slate-500 border border-slate-800/50 px-5 py-2 rounded-sm uppercase hover:text-white hover:border-teal-500 transition-all">Google Dev Profile</a>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
+                <a href="#video-portfolio" class="px-10 py-4 border border-teal-500/40 text-white text-[9px] tracking-[0.5em] uppercase font-bold hover:bg-teal-500/10 transition-all text-center">
+                    Video Reels
+                </a>
+                <a href="workflow.html" class="px-10 py-4 bg-white text-black text-[9px] tracking-[0.5em] uppercase font-bold hover:bg-[#2dd4bf] transition-all shadow-2xl shadow-teal-500/20 text-center">
+                    Technical Workflow
+                </a>
             </div>
         </div>
 
-        <div class="md:w-2/5 w-full max-w-[450px] relative group">
-            <div class="absolute -inset-1 bg-gradient-to-tr from-[#2dd4bf] to-blue-500 rounded-xl blur opacity-10 group-hover:opacity-40 transition duration-1000"></div>
-            <img src="jeseka-working.jpg" alt="Jeseka Price" class="relative rounded-xl border border-white/5 shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000 object-cover aspect-[3/4]">
+        <div class="md:w-2/5 w-full max-w-[450px] flex flex-col items-center group mt-8 md:mt-0">
+            <div class="relative w-full">
+                <div class="absolute -inset-1 bg-gradient-to-tr from-[#2dd4bf] to-blue-500 rounded-xl blur opacity-10 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="jeseka-working.jpg" alt="Jeseka Price" class="relative rounded-xl border border-white/5 shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000 object-cover aspect-[3/4] w-full">
+            </div>
+
+            <div class="flex w-full justify-center gap-8 mt-6">
+                <a href="https://www.linkedin.com/in/jesekaprice" target="_blank" class="text-[9px] tracking-[0.4em] text-white/60 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] uppercase transition-all font-light">
+                    LinkedIn
+                </a>
+                <a href="https://g.dev/jprice4hire" target="_blank" class="text-[9px] tracking-[0.4em] text-white/60 hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] uppercase transition-all font-light">
+                    Google Dev
+                </a>
+            </div>
         </div>
+
     </div>
 </section>
 <section id="credits" class="py-16 px-4">
@@ -267,44 +276,30 @@ box-shadow: 0 10px 30px -10px rgba(45, 212, 191, 0.4);
     </div>
 </section>
 <section id="video-portfolio" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto mb-12 p-6 bg-[#020617] border border-[#2dd4bf] rounded-xl shadow-[0_0_15px_rgba(45,212,191,0.15)]">
+    <div class="max-w-4xl mx-auto mb-12 p-8 bg-[#020617] border border-[#2dd4bf] rounded-xl shadow-[0_0_15px_rgba(45,212,191,0.15)]">
         
-        <div class="relative w-full aspect-video rounded-lg overflow-hidden mb-6 bg-black">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/WRf7ois3JLM"
-                title="3D Medical Visualization: Brain Tumor Analysis"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden mb-8 bg-black border border-white/5">
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/WRf7ois3JLM" title="3D Medical Visualization: Brain Tumor Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <h3 class="text-2xl font-bold text-[#2dd4bf] mb-2">3D Medical Visualization: Brain Tumor Analysis</h3>
-        <p class="text-sm font-semibold text-slate-400 mb-4 tracking-wide">Software Utilization: ParaView | 3D Slicer | Audacity</p>
+        <h3 class="text-2xl font-bold text-white mb-2 tracking-widest uppercase">3D Medical Visualization: Brain Tumor Analysis</h3>
+        <p class="text-[10px] font-bold text-[#2dd4bf] mb-6 tracking-[0.3em] uppercase">Software Utilization: ParaView | 3D Slicer | Audacity</p>
         
-        <blockquote class="text-slate-200 leading-relaxed border-l-4 border-[#2dd4bf] pl-4 italic">
+        <blockquote class="text-[10px] md:text-[11px] text-white font-light leading-loose tracking-[0.2em] uppercase opacity-90 border-l-2 border-[#2dd4bf] pl-5">
             "This project demonstrates a sophisticated synthesis of Scientific Visualization and Medical Informatics. Utilizing 3D Slicer for initial volumetric segmentation of a brain MRI and ParaView for advanced data processing, I transformed raw clinical data into high-fidelity 3D digital assets. This workflow bridges the gap between diagnostic imaging and AI research-ready assets. The visualization is paired with a professional technical voiceover, providing a detailed interpretation of the pathology. This asset corresponds to clinical findings documented under ICD-10-CM Code: C71.9 (Malignant neoplasm of brain, unspecified), ensuring the visualization remains grounded in precise medical coding standards for cutting-edge AI research."
         </blockquote>
     </div>
 
-    <div class="max-w-4xl mx-auto mb-12 p-6 bg-[#020617] border border-[#2dd4bf] rounded-xl shadow-[0_0_15px_rgba(45,212,191,0.15)]">
+    <div class="max-w-4xl mx-auto mb-12 p-8 bg-[#020617] border border-[#2dd4bf] rounded-xl shadow-[0_0_15px_rgba(45,212,191,0.15)]">
         
-        <div class="relative w-full aspect-video rounded-lg overflow-hidden mb-6 bg-black">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/OzcGfNYBHEU"
-                title="Cinematic Video 808"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden mb-8 bg-black border border-white/5">
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/OzcGfNYBHEU" title="Cinematic Video 808" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <h3 class="text-2xl font-bold text-[#2dd4bf] mb-2">Cinematic Video "808" In-House Production</h3>
-        <p class="text-sm font-semibold text-slate-400 mb-4 tracking-wide">by Jeseka Price [ Composer, Beat Producer, Songwriter and Arranger ]</p>
+        <h3 class="text-2xl font-bold text-white mb-2 tracking-widest uppercase">Cinematic Video "808" In-House Production</h3>
+        <p class="text-[10px] font-bold text-[#2dd4bf] mb-6 tracking-[0.3em] uppercase">by Jeseka Price [ Composer, Beat Producer, and Arranger ]</p>
         
-        <blockquote class="text-slate-200 leading-relaxed border-l-4 border-[#2dd4bf] pl-4 italic">
+        <blockquote class="text-[10px] md:text-[11px] text-white font-light leading-loose tracking-[0.2em] uppercase opacity-90 border-l-2 border-[#2dd4bf] pl-5">
             "A creative exploration of cinematic sound design and rhythmic synthesis. This project features original music production centered around 808 synthesis, paired with high-concept visual aesthetics that showcase the intersection of audio engineering and cinematic storytelling."
         </blockquote>
     </div>
