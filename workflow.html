@@ -8,96 +8,114 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --dark-bg: #020617; --teal-accent: #2dd4bf; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: #f1f5f9; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: #f1f5f9; overflow-x: hidden; }
         .font-sleek { font-family: 'Syncopate', sans-serif; letter-spacing: 0.25em; font-weight: 400; text-transform: uppercase; }
+        
+        /* Background Video Styling */
+        .workflow-bg-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .workflow-video { width: 100%; height: 100%; object-fit: cover; opacity: 0.15; filter: saturate(0) brightness(0.4); }
+
         .liquid-glass-card { 
-            background: rgba(2, 6, 23, 0.4); 
+            background: rgba(2, 6, 23, 0.6); 
             backdrop-filter: blur(12px); 
-            border: 1px solid rgba(45, 212, 191, 0.3); 
-            padding: 2rem; 
+            border: 1px solid rgba(45, 212, 191, 0.2); 
+            padding: 2.5rem; 
+            transition: all 0.4s ease;
         }
         .blue-glow { text-shadow: 0 0 15px rgba(45, 212, 191, 0.5); }
     </style>
 </head>
 <body class="py-20 px-6">
 
+    <div class="workflow-bg-container">
+        <video autoplay loop muted playsinline class="workflow-video">
+            <source src="workflow-bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-            <a href="index.html" class="font-sleek text-xs text-[#2dd4bf] tracking-[0.4em]">← Return to Identity</a>
-            <div class="font-sleek text-[10px] text-slate-500 tracking-[0.4em]">Technical Pipeline Documentation</div>
+            <a href="index.html" class="font-sleek text-[9px] text-[#2dd4bf] tracking-[0.4em]">← Back to Identity</a>
+            <div class="font-sleek text-[9px] text-slate-500 tracking-[0.4em] hidden md:block">Technical Pipeline Architecture</div>
         </div>
     </nav>
 
-    <main class="max-w-5xl mx-auto mt-10">
-        <header class="mb-16 text-center md:text-left">
-            <p class="text-[9px] tracking-[0.6em] uppercase text-teal-500 mb-4 font-bold">Scientific Visualization</p>
-            <h1 class="font-sleek text-3xl md:text-5xl text-white mb-6">DATA <span class="text-[#2dd4bf] blue-glow">PIPELINE</span></h1>
-            <p class="text-slate-400 max-w-2xl leading-relaxed uppercase tracking-[0.2em] text-[10px]">
-                Bridging clinical MRI data to high-fidelity 3D assets for AI Research & Surgical Simulation.
-            </p>
+    <main class="max-w-6xl mx-auto mt-16">
+        
+        <header class="flex flex-col md:flex-row items-center gap-12 mb-20">
+            <div class="md:w-2/3 text-center md:text-left">
+                <p class="text-[9px] tracking-[0.6em] uppercase text-teal-500 mb-4 font-bold">Scientific Visualization</p>
+                <h1 class="font-sleek text-3xl md:text-5xl text-white mb-8">DATA <span class="text-[#2dd4bf] blue-glow">PIPELINE</span></h1>
+                <p class="text-slate-400 max-w-xl leading-relaxed uppercase tracking-[0.2em] text-[10px] opacity-80">
+                    Bridging clinical MRI datasets to research-ready 3D digital assets through precise volumetric segmentation and advanced scalar rendering.
+                </p>
+            </div>
+
+            <div class="md:w-1/3 relative group">
+                <div class="absolute -inset-1 bg-[#2dd4bf] rounded-xl blur opacity-10 group-hover:opacity-30 transition duration-700"></div>
+                <img src="jeseka-sidepro-working.jpg" alt="Technical Director at work" 
+                     class="relative rounded-xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000 object-cover aspect-video">
+            </div>
         </header>
 
-        <div class="grid grid-cols-1 gap-12">
+        <div class="grid grid-cols-1 gap-8">
             
-            <div class="liquid-glass-card rounded-2xl group">
-                <div class="flex flex-col md:flex-row gap-8">
+            <div class="liquid-glass-card rounded-2xl group hover:border-[#2dd4bf]/50">
+                <div class="flex flex-col md:flex-row gap-10">
                     <div class="md:w-1/3">
-                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">01</span>
+                        <span class="text-4xl font-bold text-white/5 group-hover:text-[#2dd4bf]/20 transition-colors">01</span>
                         <h2 class="font-sleek text-lg text-white mb-4">Volumetric Segmentation</h2>
-                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: 3D Slicer</p>
+                        <p class="text-[9px] text-teal-400 font-bold mb-2 uppercase tracking-widest">Tool: 3D Slicer</p>
                     </div>
-                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
-                        <p class="mb-4">Beginning with raw DICOM MRI datasets, I perform precise segmentation of intracranial pathology. This involves using thresholding and manual tracing tools to define the boundaries of the tumor (ICD-10: C71.9).</p>
-                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
-                            <li>Multi-Volume Data Loading & Alignment</li>
-                            <li>Segment Editor Labeling for Malignant Neoplasms</li>
-                            <li>Smoothing & Topological Refinement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="liquid-glass-card rounded-2xl group">
-                <div class="flex flex-col md:flex-row gap-8">
-                    <div class="md:w-1/3">
-                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">02</span>
-                        <h2 class="font-sleek text-lg text-white mb-4">Advanced Data Processing</h2>
-                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: ParaView</p>
-                    </div>
-                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
-                        <p class="mb-4">The segmented mesh is imported into ParaView for scientific rendering. I apply custom scalar opacity mapping and volume rendering techniques to visualize density variations within the tumor tissue.</p>
-                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
-                            <li>Iso-surface Extraction & Clipping</li>
-                            <li>Voxel-to-Mesh Optimization for AI Training</li>
-                            <li>Custom Color Mapping based on Hounsfield Units (HU)</li>
-                        </ul>
+                    <div class="md:w-2/3 text-slate-400 text-xs leading-relaxed tracking-wide">
+                        <p class="mb-4">Processing raw DICOM MRI data to isolate intracranial pathology. By utilizing thresholding and manual tracing, I define the volume of the tumor (ICD-10: C71.9) for precise 3D reconstruction.</p>
+                        <div class="flex gap-4 text-[8px] uppercase tracking-widest font-bold">
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">DICOM Processing</span>
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">Label Mapping</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="liquid-glass-card rounded-2xl group">
-                <div class="flex flex-col md:flex-row gap-8">
+            <div class="liquid-glass-card rounded-2xl group hover:border-[#2dd4bf]/50">
+                <div class="flex flex-col md:flex-row gap-10">
                     <div class="md:w-1/3">
-                        <span class="text-4xl font-bold text-white/10 group-hover:text-[#2dd4bf]/20 transition-colors">03</span>
-                        <h2 class="font-sleek text-lg text-white mb-4">Diagnostic Synthesis</h2>
-                        <p class="text-[10px] text-teal-400 font-bold mb-2 uppercase">Software: Audacity | 4K Render Engine</p>
+                        <span class="text-4xl font-bold text-white/5 group-hover:text-[#2dd4bf]/20 transition-colors">02</span>
+                        <h2 class="font-sleek text-lg text-white mb-4">Scalar Visualization</h2>
+                        <p class="text-[9px] text-teal-400 font-bold mb-2 uppercase tracking-widest">Tool: ParaView</p>
                     </div>
-                    <div class="md:w-2/3 text-slate-300 text-sm leading-relaxed">
-                        <p class="mb-4">The final 3D asset is integrated with a professional technical voiceover. This step bridges the visualization with clinical documentation (CPT 70553), creating a comprehensive multimodal training asset.</p>
-                        <ul class="list-disc pl-5 space-y-2 text-[11px] uppercase tracking-widest text-slate-400">
-                            <li>Technical Narration for Medical Informatics</li>
-                            <li>Cinematic 4K Rotational Export</li>
-                            <li>Alignment with AI Data Annotation Standards</li>
-                        </ul>
+                    <div class="md:w-2/3 text-slate-400 text-xs leading-relaxed tracking-wide">
+                        <p class="mb-4">Segmented data is imported for high-performance rendering. I apply scalar opacity mapping and custom transfer functions to visualize tissue density variations within the pathology.</p>
+                        <div class="flex gap-4 text-[8px] uppercase tracking-widest font-bold">
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">Volume Rendering</span>
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">Mesh Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="liquid-glass-card rounded-2xl group hover:border-[#2dd4bf]/50">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/3">
+                        <span class="text-4xl font-bold text-white/5 group-hover:text-[#2dd4bf]/20 transition-colors">03</span>
+                        <h2 class="font-sleek text-lg text-white mb-4">Technical Synthesis</h2>
+                        <p class="text-[9px] text-teal-400 font-bold mb-2 uppercase tracking-widest">Tool: Audacity | 4K Render</p>
+                    </div>
+                    <div class="md:w-2/3 text-slate-400 text-xs leading-relaxed tracking-wide">
+                        <p class="mb-4">Final integration of 4K cinematic rotational renders with clinical technical narration. This workflow ensures alignment with diagnostic informatics and AI training data standards.</p>
+                        <div class="flex gap-4 text-[8px] uppercase tracking-widest font-bold">
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">Audio Integration</span>
+                            <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-teal-500">AI Readiness</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <footer class="mt-20 text-center pb-20">
-            <a href="index.html#contact-section" class="px-12 py-4 bg-[#2dd4bf] text-black font-sleek text-[10px] hover:bg-white transition-all">
-                Inquire for Technical Consulting
+        <footer class="mt-32 text-center pb-20">
+            <a href="index.html#contact-section" class="px-12 py-5 bg-white text-black font-sleek text-[9px] tracking-[0.4em] hover:bg-[#2dd4bf] transition-all shadow-2xl shadow-teal-500/20">
+                Request Pipeline Audit
             </a>
         </footer>
     </main>
